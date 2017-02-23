@@ -1,0 +1,279 @@
+html, body{
+	font-family: 'Lato', sans-serif;
+	overflow: hidden;
+}
+
+hr{
+	border-bottom: 1px solid green;
+}
+
+#inicial>.row>.col-md-4{
+	background-color: #b8f2e3; 
+	height: 100%;
+	text-align: center;
+}
+
+#inicial>.row>.col-md-4>form{
+	margin-top: 20%;
+	font-size: 20px;
+}
+
+#usuario, #estado{
+	background-color: #d7f7ef;
+}
+
+#estado{
+	resize: none;
+}
+
+#subirImagen>div{
+	background-color: transparent;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#barraSuperior{
+	height: 10%;
+	background-color: #c0f9f9; 
+}
+
+#principal{
+	height:90%;
+	background-color: #e0ffff;
+}
+
+#principal>div{
+	height: 100%;
+}
+
+#cuerpoChat{
+	height: 90%;
+	background-color: #f2f4f3;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+
+#cuerpoMensaje{
+	height: 10%;
+	background-color: #c0f9f9;
+}
+
+#barraSuperior, #principal, #cuerpoChat, #cuerpoMensaje{
+	border: 1px solid #e8e8e8;
+}
+
+#imagenPerso{
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	margin-bottom: 5%;
+	border: 1px solid #4ce03e;
+}
+
+#contenedorImagenes{
+	margin-left: 15%;
+
+}
+
+.imagenDefecto{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	border: 1px solid #4ce03e;
+}
+
+.imagenDefecto:hover{
+	cursor: pointer;
+	border: 3px solid #4ce03e;
+}
+
+#entrarChat{
+	width: 90%;
+	height: 8%;
+	margin: auto;
+	margin-top: 5%;
+	font-size: 25px;
+}
+
+#cuerpoInicial{
+	background-color: #d7f7ef;
+}
+
+#cuerpoInicial>img{
+	width: 30%;
+	margin: auto;
+	margin-top: 5%;
+}
+
+#avatarUsuario{
+	width: 50px;
+	height: 50px;
+	margin-top:10%;
+}
+
+#nombreUsuario{
+    margin-top: 0px;
+    margin-bottom: 1%;
+}
+
+#estadoUsuario, .estadoUsuarios{
+	width: 100%;
+	margin-top:0;
+	margin-bottom:0;
+	padding: 0;
+	word-wrap: break-word;
+	color: gray;
+}
+
+#mensaje{
+	margin-top: 1%;
+	height: 70%;
+}
+
+
+/*Estilos para los mensajes de chat */
+
+
+.propioMsj{
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border:2px solid #93f473;
+	max-width: 80%;
+	background-color: #c1f9ae;
+	padding: 0 1%;
+}
+
+.propioMsj>hr,.ajenoMsj>hr{
+	padding: 0;
+	margin: 0;
+	border-color: rgba(173, 173, 173,0.5);
+}
+
+.ajenoMsj{
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border:2px solid #93f473;
+	max-width: 80%;
+	padding: 0 1%;
+}
+
+.contenedorPropio{
+	max-width: 100%;
+	word-wrap: break-word;
+	margin-top: 1%;
+}
+
+.contenedorAjeno{
+	margin-left: 2%;
+	max-width: 98%;
+	word-wrap: break-word;
+	margin-top: 1%;
+}
+
+.hora{
+	font-size: 70%;
+	color: gray;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.nombreYo, .nombreAjeno{
+	font-size: 80%;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.contenedorInfo{
+	margin-top: 1%;
+	width: 100%;
+	text-align:center;
+}
+
+.infoMsj{
+	margin-top: 1%;
+}
+
+.connectInfo{
+	padding: 0.5%;
+	font-size: 90%;
+	border-radius: 5px;
+	background-color: #d8d8d8;
+	border: 1px solid rgba(183, 183, 183, 1);
+}
+
+.connectInfo>span{
+	font-weight: bold;
+}
+
+#numUsuarios{
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#escribiendo{
+	color: limegreen;
+}
+
+.chatUsuario{
+	padding: 2%;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	background-color: #efffff;
+}
+
+.chatUsuario:hover{
+	cursor: pointer;
+	background-color: #daeaea;
+}
+
+.imagenesUsuario{
+	width: 50px;
+	height: 50px;
+}
+
+#contenedorUsuarios{
+	width: 100%;
+	height: 95%;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+
+
+/* Estilos para las barras de scroll */
+
+::-webkit-scrollbar {
+    width: 1%;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #e0e0e0;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: rgba(175, 175, 175, 0.7);
+  outline: 1px solid slategrey;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "prueba-chat",
+  "version": "1.0.0",
+  "description": "Prueba de creacion de chats con nodejs, socket.io y express",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node ./server/server.js"  
+  },
+  "author": "Jose Pablo Ferre",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
